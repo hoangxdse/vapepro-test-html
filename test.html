@@ -21,8 +21,8 @@
         background-color: black;
         width: auto;
         height: 430px;
-        border: solid 30px black;
-        
+      
+      
     }
      .menu{
         background-color:white;
@@ -31,6 +31,9 @@
         float: left;
         margin: 10px 0px 0px 315px;
         list-style-type: none;
+        position: relative;
+        
+        
         
     }
     .smenu{
@@ -38,7 +41,10 @@
         background-color: white;
         width: 120px;
         height: 300px;
-        
+        float: left;
+       list-style-type: none;
+       text-transform: uppercase;
+       
     }
     
     
@@ -46,11 +52,11 @@
 
         float: left;
         text-decoration: none;
-        font-size: 17px;
-        list-style-type: none;
+        font-size: 17px;  
         text-transform: uppercase;
         margin-left: 15px;
         line-height: 35px;
+       
      
     }
     .menu li a{
@@ -66,12 +72,11 @@
     }
     .menu:hover .smenu{
         display: block;
-    }
-    
-    
-    .menu li ul li  .smenu{
+    } 
+    .menu li ul li.smenu{
         display: block;
     }
+   
     .tk{ margin: -41px 141px -34px 534px;
         float: left;
         width: 25%;    
@@ -99,7 +104,7 @@
                 height: 530px;
             margin-left: 280px; 
             margin-right: auto;
-
+            
     }
     .dm{
         width: auto;
@@ -112,11 +117,7 @@
        text-decoration-line:none ;
        
     }
-    .list1{
-        width: auto;
-        height: 250px;
-        margin-left: 350px;
-    }
+    
     .list2{
         width: auto;
         height: 130px;
@@ -170,7 +171,7 @@
         text-decoration-line:none ;
         font-size: 22px;
     }
-    .xt list3 a{
+    .xt .list3 a{
         font-size: 25px;
         text-decoration-line: none ;
     }
@@ -203,12 +204,14 @@
         height: 260px;
     }
     .tt1{ 
-        margin: 0px 0px 0px 320px;
+        
         width: 200px;
         height: 200px;
         
     }
-    .tt1 u{ text-decoration-line:none ;
+    .tt1 u{ color: #b5b5b5;
+     text-decoration-line:none ;
+     font-size: 14px;
         
     }
     .tt2{  margin: -139px 0px -14px 255px;
@@ -219,9 +222,23 @@
         color: #b5b5b5;
          ;
     }  
-    .k{ width: auto;
-        height: 200px ;
-        border-bottom: solid  color #b5b5b5 ;
+    .k{ width: 650px;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;   
+        margin-left: 350px;      
+    }
+    .kk{
+        width: auto;
+        height: 35px;
+        background-color: black;
+    }
+    .a3{ color: #b5b5b5;
+        text-decoration: none;
+    }
+    .a3:hover{
+
+        color: white;
     }
     .link a:hover{  
         background-image: url(img/fb2.png);
@@ -247,6 +264,76 @@
         width: 386px;
         float: left;
         
+        
+    }
+    .list1{ 
+        width: 1245px;
+        height: 245px;
+        margin-left: 350px;
+        position: relative;
+        
+       
+    }
+    
+    .n1{
+        
+        color: white;
+        font-size: 20px;
+        text-decoration-line:none ;
+        height: 50px;
+        width: 245px;
+        text-align: center;
+        margin: auto;
+       
+        
+    }
+    
+    .list1 .n1{ 
+        position:absolute;
+      
+        background-color: rgba(000, 000, 000, 0.5);
+        
+        bottom: 0;
+      
+        }
+    .l1{ background-image: url(img/sale.png);
+        width: 245px;
+        height: 245px;
+        
+        position: absolute;
+        
+    }
+    .n2{ background-image: url(img/pod.png);
+        width: 245px;
+        height: 245px;
+        left: 250px;
+        position: absolute;
+        
+    }
+    .n3{ background-image: url(img/tinhdau.png);
+        width: 245px;
+        height: 245px;
+        
+        position: absolute;
+        left: 500px;
+    }
+    .n4{ background-image: url(img/pod1.png);
+        width: 245px;
+        height: 245px;
+       
+        position: absolute;
+        left: 750px;
+    }
+    .n5{ background-image: url(img/pk.png);
+        width: 245px;
+        height: 245px;
+       
+        position: absolute;
+        left: 1000px;
+    }
+    .h1{
+        font-size: 12px;
+        color: white;
     }
        </style> 
 </head>
@@ -306,13 +393,23 @@
         border:solid 1px;  margin: 0px 0px -15px 285px;"></div>
         <u>DANH MỤC SẢN PHẨM</u> 
     </div>
-    <div class="list1">
-        <a href="#"><img src="C:\Users\DuHoo\Desktop\tét\img\sale.png" alt=""></a>
-        <a href="#"><img src="C:\Users\DuHoo\Desktop\tét\img\pod.png" alt=""></a>
-        <a href="#"><img src="C:\Users\DuHoo\Desktop\tét\img\pod1.png" alt=""></a>
-        <a href="#"><img src="C:\Users\DuHoo\Desktop\tét\img\tinhdau.png" alt=""></a>
-        <a href="#"><img src="C:\Users\DuHoo\Desktop\tét\img\pk.png" alt=""></a>
-    </div>
+        <div class="list1">
+                <div class="l1">
+                    <a class="n1"  href="#">SALE</a>
+                </div>
+                <div class="n2">
+                    <a class="n1"  href="#">MAY POD SYSTEM</a>
+                </div>
+                <div class="n3">
+                    <a class="n1"  href="#">TINH DAU</a>
+                </div>
+                <div class="n4">
+                    <a class="n1"  href="#">POD DUNG MOT LAN</a>
+                </div>
+                <div class="n5">
+                    <a class="n1"  href="#">POD DUNG MOT LAN</a>
+                </div>
+        </div> 
     <div class="list2">
         <a href="#"><img src="C:\Users\DuHoo\Desktop\tét\img\gh1.png" alt=""></a>
         <a href="#"><img src="C:\Users\DuHoo\Desktop\tét\img\bk.png" alt=""></a>
@@ -398,24 +495,29 @@
     </div>
 </main>
 <footer class="bot">
-    <div class="k"> <div class="tt1"  style="color: #b5b5b5; font-size: 15px;  ">
-        <u>GIỚI THIỆU VAPEPRO                                            
-       <br><br> VapePro chuyên cung cấp các sản phẩm iQOS Pod System Tinh dầu Salt Nic, Thân máy, đầu đốt, Phụ kiện Pod System chính hãng với sự phục vụ chuyên nghiệp và uy tín.</u>
+    <div class="kk">
 
-       <div class="tt2"   style="color: #b5b5b5; font-size: 15px;  ">
-        <u>ĐỊA CHỈ VAPEPRO                                            
-       <br><br> Cửa hàng VapePro mở cửa và phục vụ khách hàng từ 9:00 - 21:00 hàng ngày, kể cả Chủ nhật.
-       Hotline: Hà Nội 0903482222 | HCM 0904648689
-       Email: vapepro.vn@gmail.com</u>
-       <div class="tt2"   style="color: #b5b5b5; font-size: 15px;  ">
-        <u>CHĂM SÓC KHÁCH HÀNG                                            
-       <br><br> <a href="#">Sản phẩm khuyến mãi</a><br>
-            <a href="#">ản phẩm nổi bật</a> <br>
-            <A href="#">Tất cả sản phẩm</A> <br>
-            <A href="#">Ưu đãi thành viên</A><br>
-            <a href="#">Khuyến mãi</a><br>
-            <a href="#">Chính sách vận chuyển</a> <br>
-            <a href="#">Chính sách bảo hành</a></u>
+    </div>
+    <div class="k"> 
+        <div class="tt1" >
+            <u><h1 class="h1">GIỚI THIỆU VAPEPRO  </h1>                                          
+            <br><br> VapePro chuyên cung cấp các sản phẩm iQOS Pod System Tinh dầu Salt Nic, Thân máy, đầu đốt, Phụ kiện Pod System chính hãng với sự phục vụ chuyên nghiệp và uy tín.</u></div>
+
+       <div class="tt1">
+                <u><h1 class="h1">ĐỊA CHỈ VAPEPRO </h1>                                           
+                <br><br> Cửa hàng VapePro mở cửa và phục vụ khách hàng từ 9:00 - 21:00 hàng ngày, kể cả Chủ nhật.
+                <h1 class="h1">Hotline: Hà Nội 0903482222 | HCM 0904648689</h1>
+                Email: vapepro.vn@gmail.com</u>
+        </div>
+       <div class="tt1">
+                <u><h1 class="h1">CHĂM SÓC KHÁCH HÀNG </h1>                                           
+                <br><br> <a class="a3" href="#">Sản phẩm khuyến mãi</a><br>
+                <a class="a3" href="#">Sản phẩm nổi bật</a> <br>
+                <a class="a3" href="#">Tất cả sản phẩm</a> <br>
+                <a class="a3" href="#">Ưu đãi thành viên</a><br>
+                <a class="a3" href="#">Khuyến mãi</a><br>
+                <a class="a3" href="#">Chính sách vận chuyển</a> <br>
+                <a class="a3" href="#">Chính sách bảo hành</a></u>
        
         			
         </div>
