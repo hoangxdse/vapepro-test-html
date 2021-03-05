@@ -4,37 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <title>VapePro</title>
    <style>
+    .header{   background-color: black;
+        width: auto;
+        height: auto;
+    }
    .red{ 
-        background:black;
-        width:auto;
-        height:120px;
-        max-height: 500;
+        margin-left:300px;
+        margin-right: 300px;
+       display: flex;
       
        }
+    
     .wt{
         background-color: white;
-        height: 2100px ;
+        height: auto ;
     }
     .bot{
         background-color: black;
         width: auto;
-        height: 430px;
+        height: auto;
       
       
     }
      .menu{
-        background-color:white;
+        
         height: 40px;
-        width: 100%;
+        width: 1150px;
         float: left;
         margin: 10px 0px 0px 315px;
         list-style-type: none;
         position: relative;
+      
         
-        
-        
+    }
+    .m1{
+        height: auto;
+        width: auto;
+        background-color:white;
     }
     .smenu{
         display: none;
@@ -77,28 +86,42 @@
         display: block;
     }
    
-    .tk{ margin: -41px 141px -34px 534px;
-        float: left;
-        width: 25%;    
-        height:25px;
+    .tk{ 
+        
+        width: 600px;    
+        height:40px;
     }
-    .link{
-        width: auto;
-        height: 100px;
-        box-sizing: border-box;
+    .seach{ 
+        width: 600px;
+        height: 40px;
+        display: flex;
+       
+    }
+    .link{ 
+        width: 220px;
+        height: 50px;
+        
     }
     .logo{
-        
-        width: 15%;
-        float: left;
-        margin:10px 0px 0px 300px ;
-        box-sizing: border-box;
-
+       
+        width: 90px;
+        height: 90px;
+       
     }
-    .ghtk{
-        width: auto;
-        height: 40px;
-        margin: -87px 0px 40px 1200px;;
+    .ag{
+        border: 10px solid black;
+    }
+    .ls{
+        border: black 25px solid;
+    }
+    .logo_size{
+        border: 30px solid black;
+    }
+    .ghtk{ display: flex;
+        width: 150px;
+        height: 80px;
+        
+        
     }
     .banner{    width: auto;
                 height: 530px;
@@ -135,7 +158,7 @@
         margin-left: 20px;
         list-style-type: none;
         text-decoration-line:none;
-        
+     
         
     }
     .list3 a{
@@ -146,13 +169,15 @@
         text-decoration-line: none ;
         font-size: 19px;
         padding: 5px ;
+        transition: ease 0.5s ;
         
     }
     
-    .ik .list3 a:hover{
+    .ik .list3 a:hover{ 
         background-color: black;
         color: white;
         text-decoration-line: none ;
+        
     }
     .xt{
         width: auto;
@@ -266,15 +291,17 @@
         
         
     }
-    .list1{ 
-        width: 1245px;
-        height: 245px;
-        margin-left: 350px;
-        position: relative;
+    .list1{ background-color: white;
+        width: auto;
+        height:auto;
         
-       
     }
-    
+    .khung1{
+        margin-left: 350px;
+        width: 1250px;
+        height: 250px;
+        display: flex;
+    }
     .n1{
         
         color: white;
@@ -284,13 +311,12 @@
         width: 245px;
         text-align: center;
         margin: auto;
-       
-        
+        position: relative;
     }
     
     .list1 .n1{ 
-        position:absolute;
-      
+        
+        position: absolute;
         background-color: rgba(000, 000, 000, 0.5);
         
         bottom: 0;
@@ -300,65 +326,92 @@
         width: 245px;
         height: 245px;
         
-        position: absolute;
         
     }
     .n2{ background-image: url(img/pod.png);
         width: 245px;
         height: 245px;
-        left: 250px;
-        position: absolute;
+        
+        
         
     }
     .n3{ background-image: url(img/tinhdau.png);
         width: 245px;
         height: 245px;
         
-        position: absolute;
-        left: 500px;
+        
+       
     }
     .n4{ background-image: url(img/pod1.png);
         width: 245px;
         height: 245px;
        
-        position: absolute;
-        left: 750px;
+       
+        
     }
     .n5{ background-image: url(img/pk.png);
         width: 245px;
         height: 245px;
        
-        position: absolute;
-        left: 1000px;
+       
+       
     }
     .h1{
         font-size: 12px;
         color: white;
     }
+    .fas{
+        background-color: #e5e9f1;
+        width: 19px;
+        height: 19px;
+        text-align: center;
+        padding: 13px;
+        cursor: pointer;
+
+        
+    }
+    .fab{
+        width: 50px;
+        background-color: black;
+        color: white;
+        font-size: 40px;
+       border-radius: 50px;
+    }
+    
        </style> 
 </head>
 <body>
-    <header class="red">
-        <a style=" color: white; margin: 15px 0px 0px 600px; text-decoration-line:none ;" href="HN:090 348 2222 - HCM:090464 8689">HN:090 348 2222 - HCM:090464 8689 </a>
-        <div class="logo">  
-            <img  style="width: auto;"  src="C:\Users\DuHoo\Desktop\tét\img\logo.png" alt="">
-        </div>
-        <div><div class="link">
-                <a  href="https://www.facebook.com/"><img style="width:auto" src="C:\Users\DuHoo\Desktop\tét\img\fb.png"  ></a>
-                <a href="https://www.instagram.com/"><img style="width:auto" src="C:\Users\DuHoo\Desktop\tét\img\Untitled.png" ></a>
-                <a href="https://www.youtube.com/"><img style="width:auto" src="C:\Users\DuHoo\Desktop\tét\img\yb.png" ></div></a>
-            <div>
-                <input class="tk"  type="Tìm Kiếm" ></div> 
+    <header class="header" >
+         <div class="red">  
+           <div class="logo_size"><div class="logo"><a href="#"><img src="img/logo.png" alt="">  </a></div>
+           </div>
+               <div class="ls"><div class="link">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a>
+                        </div>
+                
+                <div class="seach"> 
+                    <input class="tk"  placeholder="Tìm Kiếm" >
+                    <i class="fas fa-search"></i>
+                 </div> </div> 
+                 <div class="ag"><a style=" color: white; text-decoration-line:none ;" href="#">HN:090 348 2222 - HCM:090464 8689 </a>
+                    <br>
+                    <br>
+                 <div class="ghtk">  
                
-            <div class="ghtk">  
-               
-                <a href="#"><img style="width:auto" src="C:\Users\DuHoo\Desktop\tét\img\gh.png"  ></a>
-                <a href="#"><img style="width:auto" src="C:\Users\DuHoo\Desktop\tét\img\tk.png"  ></a>
-            </div>
-        </div>   
-        
-
-        <div><ul class="menu" >
+                    <a href="#" style="text-decoration: none; color: white;"  ><i style="background-color: black; font-size: 30px; color: white; border: solid 5px black; ;"  class="fas fa-shopping-cart"></i><br>Gio Hang</a>
+                    <a href="#" style="text-decoration: none; color: white;margin-left:15px"><i style="background-color: black; font-size: 30px; color: white; border: solid 5px black;" class="fas fa-user"></i><br>Tai Khoan</a>
+            </div></div>
+        </div>    
+          
+      
+    </header>
+<main class="wt">
+    
+    <div class="m1" >
+        <ul class="menu" >
+            <li class="ot"><a href="#"> HOME</a></li>
         <li class="ot"><a href="#"> SALE</a></li>
         <li class="ot"><a href="#"> MÁY POD SYSTEM</a></li>
         <li class="ot"><a href="#">TINH DẦU SALTNIC</a></li>
@@ -370,19 +423,13 @@
                     <li ><a href="#">stw5</a> </li>
             </ul>
         <li class="ot"><a href="#">PHỤ KIỆN POD</a></li>
+            
         <li class="ot"><a href="#">POD DÙNG 1 LẦN</a></li>
         <li class="ot"><a href="#">DẦU VAPE</a></li>
         <li class="ot"><a href="#">IQOS-LIL</a></li>
         <li class="ot"><a href="#">TIN TỨC</a></li>
         </ul>
         </div>
-        
-        
-      
-        
-        
-    </header>
-<main class="wt">
     <div class="banner">
         <img src="https://theme.hstatic.net/1000250387/1000323922/14/index_slider_img_4.jpg?v=873" alt="">
     </div>
@@ -394,7 +441,8 @@
         <u>DANH MỤC SẢN PHẨM</u> 
     </div>
         <div class="list1">
-                <div class="l1">
+            <div class="khung1">
+                 <div class="l1">
                     <a class="n1"  href="#">SALE</a>
                 </div>
                 <div class="n2">
@@ -409,6 +457,7 @@
                 <div class="n5">
                     <a class="n1"  href="#">POD DUNG MOT LAN</a>
                 </div>
+            </div>  
         </div> 
     <div class="list2">
         <a href="#"><img src="C:\Users\DuHoo\Desktop\tét\img\gh1.png" alt=""></a>
